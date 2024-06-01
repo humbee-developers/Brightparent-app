@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            bgcolors: '#E6E6E6',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-md w-full">
+        <div class="bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-red-600 mb-2">Error!</h2>
+        <p class="text-lg font-semibold mb-2">Payment Failed!</p>
+        <p class="text-gray-600 mb-6">Oops! It seems there was an issue processing your payment. Please double-check your payment details and try again. Any debited amount will be auto-credited to your account.</p>
+        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg focus:outline-none hover:bg-gray-300"><a href="dashboard.html">Go Home</button>
+    </div>
+</body>
+
+</html>

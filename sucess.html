@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            bgcolors: '#E6E6E6',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-md w-full">
+        <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-purple-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-purple-600 mb-2">Awesome!</h2>
+        <p class="text-lg font-semibold mb-2">Payment Confirmed!</p>
+        <div class="text-4xl mb-4">₹</div>
+        <p class="text-gray-600 mb-6">Your payment has been confirmed, it may take 1-2 hours in order for your payment to
+            go through and show up in your transaction list.</p>
+        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg focus:outline-none hover:bg-gray-300"><a href="dashboard.html">Go Home</a></button>
+    </div>
+</body>
+
+</html>

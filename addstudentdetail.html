@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Studentdetail</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md p-5 bg-white rounded-lg shadow-md">
+        <div class="flex justify-center mb-5">
+            <img src="bright_logo.png" alt="Bright Logo" class="h-12"> <!-- Replace with actual logo path -->
+        </div>
+        <h1 class="text-2xl font-bold text-center mb-5">Add Student</h1>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700">Let’s start with Class Code provided by school</label>
+                <input type="text" maxlength="4" class="w-full mt-2 p-2 border border-gray-300 rounded-md" placeholder="Class Code">
+            </div>
+            <div class="mb-4">
+                <p class="text-gray-700">School Name: St Mary's School - Test<br>Teacher: Miss Beena Nair<br>Class: Class 8 - A</p>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Enter your child’s Admission No</label>
+                <input type="text" class="w-full mt-2 p-2 border border-gray-300 rounded-md" placeholder="Admission No">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Child Name</label>
+                <input type="text" class="w-full mt-2 p-2 border border-gray-300 rounded-md" placeholder="Child Name">
+            </div>
+            <div class="mb-4 flex items-center">
+                <input type="checkbox" id="confirm" class="mr-2">
+                <label for="confirm" class="text-gray-700">Confirm Information</label>
+            </div>
+            <p class="text-gray-500 text-sm mb-4">By adding student, you agree to our fair use policy</p>
+            <button type="submit" class="w-full bg-purple-600 text-white p-2 rounded-md"><a href="dashboard.html">Add Student</a></button>
+        </form>
+    </div>
+</body>
+</html>
+
